@@ -1,0 +1,25 @@
+kprkpr@kprkpr-EP41-UD3L:/tmp/android_kernel_samsung_s7560/compiled$ unmkbootimg boot.img 
+unmkbootimg version 1.2 - Mikael Q Kuisma <kuisma@ping.se>
+Kernel size 4064872
+Kernel address 0x208000
+Ramdisk size 204333
+Ramdisk address 0x1500000
+Secondary size 0
+Secondary address 0x1100000
+Kernel tags address 0x200100
+Flash page size 4096
+Board name is ""
+Command line ""
+
+*** WARNING ****
+This image is built using NON-standard mkbootimg!
+OFF_RAMDISK_ADDR is 0x01300000
+Please modify mkbootimg.c using the above values to build your image.
+****************
+
+Extracting kernel to file zImage ...
+Extracting root filesystem to file initramfs.cpio.gz ...
+All done.
+---------------
+To recompile this image, use:
+  mkbootimg --kernel zImage --ramdisk initramfs.cpio.gz --base 0x200000 --pagesize 4096 -o new_boot.img

@@ -139,3 +139,4 @@ config PID_IN_CONTEXTIDR
 	  are planning to use hardware trace tools with this kernel.
 
 endmenu
+

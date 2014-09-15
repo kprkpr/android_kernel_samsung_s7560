@@ -4,10 +4,10 @@
 #sudo chmod -R 7777 /opt/venv/
 #sudo chmod +x /opt/venv/bin/activate
 #For other CROSS_COMPILE change path in makefile
-. /opt/venv/bin/activate
+#. /opt/venv/bin/activate
 export ARCH=arm
 export SUBARCH=arm
-make clean
+make mrproper
 make kyle02_defconfig
-make -j2 V=1 zImage 
+make -j2 V=0 zImage 
 sleep 20
